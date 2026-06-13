@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohamed Atef | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    /* Fixed structural painting background */
+    .vango-bg {
+      background: url('Vincent_van_Gogh_Almond_blossom.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+    /* Simulated rough canvas texture overlay */
+    .canvas-overlay::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      opacity: 0.025;
+      pointer-events: none;
+      z-index: 99;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+    }
+  </style>
+</head>
+<body class="vango-bg canvas-overlay min-h-screen text-slate-900 font-sans antialiased">
+
+  <div class="backdrop-blur-md bg-teal-950/20 min-h-screen w-full">
+
+    <nav class="fixed top-4 left-1/2 transform -translate-x-1/2 w-11/12 max-w-5xl backdrop-blur-xl bg-white/40 border border-white/30 rounded-full py-3 px-6 shadow-lg z-50 flex justify-between items-center">
+      <span class="font-serif font-bold tracking-wider text-teal-900">M. ATEF</span>
+      <div class="space-x-4 md:space-x-6 text-xs md:text-sm font-medium text-teal-950">
+        <a href="#about" class="hover:text-teal-700 transition">About</a>
+        <a href="#experience" class="hover:text-teal-700 transition">Experience</a>
+        <a href="#projects" class="hover:text-teal-700 transition">Projects</a>
+        <a href="#skills" class="hover:text-teal-700 transition">Skills</a>
+      </div>
+    </nav>
+
+    <header id="about" class="pt-32 px-4 max-w-5xl mx-auto flex flex-col items-center justify-center min-h-[90vh] text-center">
+      <div class="backdrop-blur-2xl bg-white/50 border border-white/40 p-8 md:p-12 rounded-3xl shadow-xl max-w-3xl transform hover:scale-[1.005] transition-transform duration-300">
+        <span class="inline-block bg-teal-100/80 border border-teal-200 text-teal-800 text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full mb-6">
+          Full Stack Developer
+        </span>
+        <h1 class="text-4xl md:text-6xl font-serif font-bold text-teal-950 mb-4">Mohamed Atef Yousef</h1>
+        <p class="text-base md:text-lg text-slate-800 font-light leading-relaxed mb-8">
+          Passionate about software solutions, specializing in <span class="font-normal text-teal-900">.NET and Angular</span>. Rooted in an engineering background spanning <span class="font-normal text-teal-900">Digital IC Design & Verification</span>, RTL design, and computer architecture.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4 text-sm font-medium">
+          <a href="mailto:moatef.yousef@gmail.com" class="px-5 py-2.5 bg-teal-800 text-white rounded-full hover:bg-teal-700 shadow transition">Email Me</a>
+          <a href="https://linkedin.com/in/MohamedAtef" target="_blank" class="px-5 py-2.5 bg-white/70 border border-slate-300 rounded-full hover:bg-white/90 transition">LinkedIn</a>
+          <a href="https://github.com/moateff" target="_blank" class="px-5 py-2.5 bg-white/70 border border-slate-300 rounded-full hover:bg-white/90 transition">GitHub</a>
+        </div>
+        <div class="mt-4 text-xs text-teal-900/70">Military Status: Exempted</div>
+      </div>
+    </header>
+
+    <section id="experience" class="py-20 px-4 max-w-5xl mx-auto">
+      <h2 class="text-3xl font-serif font-bold text-center text-teal-950 mb-12">The Journey</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <div class="backdrop-blur-xl bg-white/40 border border-white/30 p-6 md:p-8 rounded-2xl shadow-md">
+          <h3 class="text-xl font-serif font-bold text-teal-950 mb-4">Education</h3>
+          <div class="space-y-6">
+            <div>
+              <div class="flex justify-between items-start text-sm">
+                <h4 class="font-semibold text-teal-900">ITI (Information Technology Institute)</h4>
+                <span class="text-xs bg-teal-900/10 text-teal-950 px-2 py-0.5 rounded">Oct 2025 - Jul 2025</span>
+              </div>
+              <p class="text-xs text-slate-700 mb-1">Professional Training (9 Months) - Integrated Software Development & Architecture</p>
+              <p class="text-xs italic text-teal-800">Graduation Project: FoodLoop Platform - Al-powered Food Tech platform reducing waste via dynamic pricing.</p>
+            </div>
+            <hr class="border-white/40">
+            <div>
+              <div class="flex justify-between items-start text-sm">
+                <h4 class="font-semibold text-teal-900">Faculty of Engineering, Alexandria University</h4>
+                <span class="text-xs bg-teal-900/10 text-teal-950 px-2 py-0.5 rounded">Oct 2020 - Jul 2025</span>
+              </div>
+              <p class="text-xs text-slate-700 mb-1">Bachelor of Electronics and Communication Engineering</p>
+              <p class="text-xs italic text-teal-800">Graduation Project: SIEMENS Project (Grade: A+) - Comparison between human-designed CNN accelerator blocks (Eyeriss) and auto-generated LLM designs.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="backdrop-blur-xl bg-white/40 border border-white/30 p-6 md:p-8 rounded-2xl shadow-md flex flex-col justify-between">
+          <div>
+            <h3 class="text-xl font-serif font-bold text-teal-950 mb-4">Academic Work</h3>
+            <div class="mb-6">
+              <div class="flex justify-between items-start text-sm">
+                <h4 class="font-semibold text-teal-900">Teaching Assistant</h4>
+                <span class="text-xs bg-teal-900/10 text-teal-950 px-2 py-0.5 rounded">Spring 2025</span>
+              </div>
+              <p class="text-xs text-slate-700">Faculty of Engineering, Alexandria University — Computer Organization Course</p>
+            </div>
+          </div>
+          <hr class="border-white/40 my-2">
+          <div>
+            <h3 class="text-lg font-serif font-bold text-teal-950 mb-3">Specialized Training</h3>
+            <ul class="space-y-2 text-xs text-slate-800">
+              <li>• <span class="font-medium">Digital-IC-Diploma (Design & Verification)</span> | Supervised by Eng Kareem Waseem</li>
+              <li>• <span class="font-medium">Virginia-Tech-MENA System On Chip Design</span> | Supervised by Prof Yasser Hanafy</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="py-20 px-4 max-w-5xl mx-auto">
+      <h2 class="text-3xl font-serif font-bold text-center text-teal-950 mb-12">The Exhibition (Projects)</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <div class="backdrop-blur-xl bg-white/50 border border-white/40 p-6 rounded-2xl shadow-sm flex flex-col justify-between hover:shadow-md transition">
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <h3 class="font-serif font-bold text-teal-950">Code Runner</h3>
+              <span class="text-[10px] text-slate-500">June 2026</span>
+            </div>
+            <p class="text-xs text-slate-700 leading-relaxed mb-4">Full-stack execution platform supporting C++, Python, and Java. Containerized runtimes with isolated environments using Docker Compose.</p>
+          </div>
+          <div class="flex flex-wrap gap-1 text-[10px] font-mono text-teal-900">
+            <span class="px-2 py-0.5 bg-white/60 rounded border border-white/80">Angular</span>
+            <span class="px-2 py-0.5 bg-white/60 rounded border border-white/80">REST Web API</span>
+            <span class="px-2 py-0.5 bg-white/60 rounded border border-white/80">Docker</span>
+          </div>
+        </div>
+
+        <div class="backdrop-blur-xl bg-white/50 border border-white/40 p-6 rounded-2xl shadow-sm flex flex-col justify-between hover:shadow-md transition">
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <h3 class="font-serif font-bold text-teal-950">Vezeeta Clone</h3>
+              <span class="text-[10px] text-slate-500">May 2026</span>
+            </div>
+            <p class="text-xs text-slate-700 leading-relaxed mb-4">Healthcare booking engine applying Clean Architecture. Features real-time AI symptom analysis recommendations using SignalR and JWT secure auth.</p>
+          </div>
+          <div class="flex flex-wrap gap-1 text-[10px] font-mono text-teal-900">
+            <span class="px-2 py-0.5 bg-white/60 rounded border border-white/80">ASP.NET Core MVC</span>
+            <span class="px-2 py-0.5 bg-white/60 rounded border border-white/80">SignalR</span>
+            <span class="px-2 py-0.5 bg-white/60 rounded border border-white/80">SQL Server</span>
+          </div>
+        </div>
+
+        <div class="backdrop-blur-xl bg-white/50 border border-white/40 p-6 rounded-2xl shadow-sm flex flex-col justify-between hover:shadow-md transition">
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <h3 class="font-serif font-bold text-teal-950">MovieHub API</h3>
+              <span class="text-[10px] text-slate-500">April 2026</span>
+            </div>
+            <p class="text-xs text-slate-700 leading-relaxed mb-4">RESTful movie management system designed with CQRS, Repository patterns, custom validation mechanics, and structured Exception Handling middleware.</p>
+          </div>
+          <div class="flex flex-wrap gap-1 text-[10px] font-mono text-teal-900">
+            <span class="px-2 py-0.5 bg-white/60 rounded border border-white/80">Web API</span>
+            <span class="px-2 py-0.5 bg-white/60 rounded border border-white/80">CQRS</span>
+            <span class="px-2 py-0.5 bg-white/60 rounded border border-white/80">EF Core</span>
+          </div>
+        </div>
+
+        <div class="backdrop-blur-xl bg-white/50 border border-white/40 p-6 rounded-2xl shadow-sm flex flex-col justify-between hover:shadow-md transition">
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <h3 class="font-serif font-bold text-teal-950">MIPS Processor</h3>
+              <span class="text-[10px] text-slate-500">Aug 2025</span>
+            </div>
+            <p class="text-xs text-slate-700 leading-relaxed mb-4">Designed a Pipelined MIPS Processor based on Harvard architecture. Developed accompanying assembler module translating raw assembly code to binary runtimes.</p>
+          </div>
+          <div class="flex flex-wrap gap-1 text-[10px] font-mono text-teal-900">
+            <span class="px-2 py-0.5 bg-white/60 rounded border border-white/80">Verilog</span>
+            <span class="px-2 py-0.5 bg-white/60 rounded border border-white/80">Architecture</span>
+          </div>
+        </div>
+
+        <div class="backdrop-blur-xl bg-white/50 border border-white/40 p-6 rounded-2xl shadow-sm flex flex-col justify-between hover:shadow-md transition">
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <h3 class="font-serif font-bold text-teal-950">Micro Shell</h3>
+              <span class="text-[10px] text-slate-500">Nov 2023</span>
+            </div>
+            <p class="text-xs text-slate-700 leading-relaxed mb-4">Custom command line execution environment. Fully engineered GNU-style utilities, process pipelines, command history queues, and complex input/output stream redirections.</p>
+          </div>
+          <div class="flex flex-wrap gap-1 text-[10px] font-mono text-teal-900">
+            <span class="px-2 py-0.5 bg-white/60 rounded border border-white/80">Linux Sys</span>
+            <span class="px-2 py-0.5 bg-white/60 rounded border border-white/80">C / Bash</span>
+          </div>
+        </div>
+
+        <div class="backdrop-blur-xl bg-white/50 border border-white/40 p-6 rounded-2xl shadow-sm flex flex-col justify-between hover:shadow-md transition">
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <h3 class="font-serif font-bold text-teal-950">PintOS</h3>
+              <span class="text-[10px] text-slate-500">May 2023</span>
+            </div>
+            <p class="text-xs text-slate-700 leading-relaxed mb-4">Extended operating systems thread scheduler core. Constructed robust priority preemption rules alongside safe stack context argument handling.</p>
+          </div>
+          <div class="flex flex-wrap gap-1 text-[10px] font-mono text-teal-900">
+            <span class="px-2 py-0.5 bg-white/60 rounded border border-white/80">Kernels</span>
+            <span class="px-2 py-0.5 bg-white/60 rounded border border-white/80">Scheduling</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="skills" class="py-20 px-4 max-w-5xl mx-auto">
+      <div class="backdrop-blur-xl bg-white/40 border border-white/30 p-8 rounded-3xl shadow-sm">
+        <h2 class="text-3xl font-serif font-bold text-center text-teal-950 mb-10">The Palette (Technical Mediums)</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-xs">
+          <div>
+            <h4 class="font-serif font-bold text-teal-900 mb-2 text-sm">Languages</h4>
+            <p class="text-slate-800 leading-relaxed">C, C++, C#, JavaScript, TypeScript, Bash, Python, MATLAB, Perl. <br><span class="italic text-teal-900">HDLs:</span> Verilog, SystemVerilog, VHDL.</p>
+          </div>
+          <div>
+            <h4 class="font-serif font-bold text-teal-900 mb-2 text-sm">Frameworks & Storage</h4>
+            <p class="text-slate-800 leading-relaxed"><span class="font-medium">Backend:</span> ASP.NET Core, EF Core, Dapper, SignalR, gRPC. <br><span class="font-medium">Frontend:</span> Angular, Tailwind. <br><span class="font-medium">DB:</span> SQL Server, MySQL, MongoDB.</p>
+          </div>
+          <div>
+            <h4 class="font-serif font-bold text-teal-900 mb-2 text-sm">Architecture & Tooling</h4>
+            <p class="text-slate-800 leading-relaxed">Docker, Kubernetes, AWS, Azure. Clean Architecture, Microservices, Domain-Driven Design. Vivado, QuestaSim, UVM Environments. RAG Pipelines & GenAI Agents.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-12 border-t border-white/20 bg-teal-950/10 backdrop-blur-md text-center text-xs text-teal-950">
+      <div class="max-w-4xl mx-auto px-4 space-y-2">
+        <p class="font-medium">Mentorship & Community Contributions</p>
+        <p class="text-slate-700 font-light">Chipions Program Mentor & Digital IC Team Coordinator, IEEE SSCS AUSC (2024 - 2025)</p>
+        <p class="text-teal-900/60 italic">Awarded Certificate of Appreciation by academic peers for comprehensive support.</p>
+      </div>
+    </footer>
+
+  </div>
+</body>
+</html>
